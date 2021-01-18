@@ -1,0 +1,16 @@
+$body-color: slateblue;
+
+body {
+  color: $body-color;
+  font-family: sans-serif;
+}
+
+.item {
+  &.is-done {
+    .item {
+      &__title {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
